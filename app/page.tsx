@@ -1,6 +1,15 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { LightbulbIcon, RocketIcon, UsersIcon, BarChartIcon, ArrowRightIcon, CalendarIcon } from "lucide-react"
+import {
+  LightbulbIcon,
+  RocketIcon,
+  UsersIcon,
+  BarChartIcon,
+  ArrowRightIcon,
+  CalendarIcon,
+  CodeIcon,
+  SearchIcon,
+} from "lucide-react"
 import ContactForm from "@/components/contact-form"
 import ExperienceSection from "@/components/experience-section"
 
@@ -49,43 +58,67 @@ export default function Home() {
               Consulting Services
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <Card className="bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-200">
-              <CardContent className="p-8 flex flex-col items-center text-center space-y-4">
-                <div className="p-3 bg-[#3B6F9C]/10 rounded-full">
-                  <LightbulbIcon className="h-8 w-8 text-[#3B6F9C]" />
-                </div>
-                <h3 className="text-xl font-bold text-[#1A1A1A]">AI Product Strategy</h3>
-                <p className="text-gray-600">From scoping to feasibility — craft smarter, sharper products.</p>
-              </CardContent>
-            </Card>
-            <Card className="bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-200">
-              <CardContent className="p-8 flex flex-col items-center text-center space-y-4">
-                <div className="p-3 bg-[#3B6F9C]/10 rounded-full">
-                  <RocketIcon className="h-8 w-8 text-[#3B6F9C]" />
-                </div>
-                <h3 className="text-xl font-bold text-[#1A1A1A]">Go-to-Market Acceleration</h3>
-                <p className="text-gray-600">Nail your narrative, test pilots, and drive traction.</p>
-              </CardContent>
-            </Card>
-            <Card className="bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-200">
-              <CardContent className="p-8 flex flex-col items-center text-center space-y-4">
-                <div className="p-3 bg-[#3B6F9C]/10 rounded-full">
-                  <UsersIcon className="h-8 w-8 text-[#3B6F9C]" />
-                </div>
-                <h3 className="text-xl font-bold text-[#1A1A1A]">Fractional Product Leadership</h3>
-                <p className="text-gray-600">Interim product exec to drive clarity, velocity, and delivery.</p>
-              </CardContent>
-            </Card>
-            <Card className="bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-200">
-              <CardContent className="p-8 flex flex-col items-center text-center space-y-4">
-                <div className="p-3 bg-[#3B6F9C]/10 rounded-full">
-                  <BarChartIcon className="h-8 w-8 text-[#3B6F9C]" />
-                </div>
-                <h3 className="text-xl font-bold text-[#1A1A1A]">Investor Advisory</h3>
-                <p className="text-gray-600">Evaluate risk, roadmap, and AI readiness.</p>
-              </CardContent>
-            </Card>
+          <div className="h-[500px] overflow-auto pr-4 pb-8 hide-scrollbar">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <Card className="bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-200">
+                <CardContent className="p-8 flex flex-col items-center text-center space-y-4">
+                  <div className="p-3 bg-[#3B6F9C]/10 rounded-full">
+                    <LightbulbIcon className="h-8 w-8 text-[#3B6F9C]" />
+                  </div>
+                  <h3 className="text-xl font-bold text-[#1A1A1A]">AI Product Strategy</h3>
+                  <p className="text-gray-600">From scoping to feasibility — craft smarter, sharper products.</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-200">
+                <CardContent className="p-8 flex flex-col items-center text-center space-y-4">
+                  <div className="p-3 bg-[#3B6F9C]/10 rounded-full">
+                    <RocketIcon className="h-8 w-8 text-[#3B6F9C]" />
+                  </div>
+                  <h3 className="text-xl font-bold text-[#1A1A1A]">Go-to-Market Acceleration</h3>
+                  <p className="text-gray-600">Nail your narrative, test pilots, and drive traction.</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-200">
+                <CardContent className="p-8 flex flex-col items-center text-center space-y-4">
+                  <div className="p-3 bg-[#3B6F9C]/10 rounded-full">
+                    <UsersIcon className="h-8 w-8 text-[#3B6F9C]" />
+                  </div>
+                  <h3 className="text-xl font-bold text-[#1A1A1A]">Fractional Product Leadership</h3>
+                  <p className="text-gray-600">Interim product exec to drive clarity, velocity, and delivery.</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-200">
+                <CardContent className="p-8 flex flex-col items-center text-center space-y-4">
+                  <div className="p-3 bg-[#3B6F9C]/10 rounded-full">
+                    <BarChartIcon className="h-8 w-8 text-[#3B6F9C]" />
+                  </div>
+                  <h3 className="text-xl font-bold text-[#1A1A1A]">Investor Advisory</h3>
+                  <p className="text-gray-600">Evaluate risk, roadmap, and AI readiness.</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-200">
+                <CardContent className="p-8 flex flex-col items-center text-center space-y-4">
+                  <div className="p-3 bg-[#3B6F9C]/10 rounded-full">
+                    <SearchIcon className="h-8 w-8 text-[#3B6F9C]" />
+                  </div>
+                  <h3 className="text-xl font-bold text-[#1A1A1A]">AI Readiness & Discovery Sprints</h3>
+                  <p className="text-gray-600">
+                    Pinpoint high-impact AI use cases and build a pragmatic adoption roadmap.
+                  </p>
+                </CardContent>
+              </Card>
+              <Card className="bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-200">
+                <CardContent className="p-8 flex flex-col items-center text-center space-y-4">
+                  <div className="p-3 bg-[#3B6F9C]/10 rounded-full">
+                    <CodeIcon className="h-8 w-8 text-[#3B6F9C]" />
+                  </div>
+                  <h3 className="text-xl font-bold text-[#1A1A1A]">Custom GPTs & Internal Enablement</h3>
+                  <p className="text-gray-600">
+                    Deploy ChatGPT as a real tool, not just a toy. Train superusers and streamline workflows.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
           </div>
           <div className="flex justify-center mt-16">
             <p className="text-xl font-medium text-gray-700 italic">
