@@ -12,13 +12,13 @@ export default function Header() {
             <span className="text-xl font-bold text-[#1A1A1A]">AI Solutions Group</span>
           </Link>
           <nav className="hidden md:flex items-center gap-8">
-            <Link href="#" className="text-sm font-medium text-gray-600 hover:text-[#3B6F9C] transition-colors">
+            <Link href="#services" className="text-sm font-medium text-gray-600 hover:text-[#3B6F9C] transition-colors">
               Services
             </Link>
-            <Link href="#" className="text-sm font-medium text-gray-600 hover:text-[#3B6F9C] transition-colors">
-              Clients
-            </Link>
-            <Link href="#" className="text-sm font-medium text-gray-600 hover:text-[#3B6F9C] transition-colors">
+            <Link
+              href="#engagements"
+              className="text-sm font-medium text-gray-600 hover:text-[#3B6F9C] transition-colors"
+            >
               Engagements
             </Link>
             <Link href="#contact" className="text-sm font-medium text-gray-600 hover:text-[#3B6F9C] transition-colors">
