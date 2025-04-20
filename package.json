@@ -63,7 +63,9 @@
     "svelte": "latest",
     "vue": "latest",
     "vue-router": "latest",
-    "@vercel/analytics": "latest"
+    "@emotion/is-prop-valid": "latest",
+    "@vercel/analytics": "latest",
+    "framer-motion": "latest"
   },
   "devDependencies": {
     "@types/node": "^22",
