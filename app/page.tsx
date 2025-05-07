@@ -9,6 +9,7 @@ import {
   CalendarIcon,
   SearchIcon,
   CodeIcon,
+  BookOpenIcon,
 } from "lucide-react"
 import ContactForm from "@/components/contact-form"
 import ExperienceSection from "@/components/experience-section"
@@ -50,7 +51,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* What We Do Section */}
+      {/* Consulting Services Section */}
       <section id="services" className="w-full py-24 md:py-32 bg-[#FAFAFA]">
         <div className="container px-4 md:px-6 max-w-6xl mx-auto">
           <div className="flex flex-col items-center space-y-4 text-center mb-16">
@@ -58,7 +59,9 @@ export default function Home() {
               Consulting Services
             </h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+          {/* First row - 4 cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
             <Card className="bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-200">
               <CardContent className="p-8 flex flex-col items-center text-center space-y-4">
                 <div className="p-3 bg-[#3B6F9C]/10 rounded-full">
@@ -68,6 +71,7 @@ export default function Home() {
                 <p className="text-gray-600">From scoping to feasibility — craft smarter, sharper products.</p>
               </CardContent>
             </Card>
+
             <Card className="bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-200">
               <CardContent className="p-8 flex flex-col items-center text-center space-y-4">
                 <div className="p-3 bg-[#3B6F9C]/10 rounded-full">
@@ -77,6 +81,7 @@ export default function Home() {
                 <p className="text-gray-600">Nail your narrative, test pilots, and drive traction.</p>
               </CardContent>
             </Card>
+
             <Card className="bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-200">
               <CardContent className="p-8 flex flex-col items-center text-center space-y-4">
                 <div className="p-3 bg-[#3B6F9C]/10 rounded-full">
@@ -86,6 +91,7 @@ export default function Home() {
                 <p className="text-gray-600">Interim product exec to drive clarity, velocity, and delivery.</p>
               </CardContent>
             </Card>
+
             <Card className="bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-200">
               <CardContent className="p-8 flex flex-col items-center text-center space-y-4">
                 <div className="p-3 bg-[#3B6F9C]/10 rounded-full">
@@ -95,6 +101,10 @@ export default function Home() {
                 <p className="text-gray-600">Evaluate risk, roadmap, and AI readiness.</p>
               </CardContent>
             </Card>
+          </div>
+
+          {/* Second row - 3 cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-200">
               <CardContent className="p-8 flex flex-col items-center text-center space-y-4">
                 <div className="p-3 bg-[#3B6F9C]/10 rounded-full">
@@ -106,6 +116,7 @@ export default function Home() {
                 </p>
               </CardContent>
             </Card>
+
             <Card className="bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-200">
               <CardContent className="p-8 flex flex-col items-center text-center space-y-4">
                 <div className="p-3 bg-[#3B6F9C]/10 rounded-full">
@@ -117,7 +128,21 @@ export default function Home() {
                 </p>
               </CardContent>
             </Card>
+
+            <Card className="bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-200">
+              <CardContent className="p-8 flex flex-col items-center text-center space-y-4">
+                <div className="p-3 bg-[#3B6F9C]/10 rounded-full">
+                  <BookOpenIcon className="h-8 w-8 text-[#3B6F9C]" />
+                </div>
+                <h3 className="text-xl font-bold text-[#1A1A1A]">AI Coach</h3>
+                <p className="text-gray-600">
+                  Stay ahead of the AI curve. Personalized guidance, custom workflows, and expert insight tailored to
+                  your professional goals.
+                </p>
+              </CardContent>
+            </Card>
           </div>
+
           <div className="flex justify-center mt-16">
             <p className="text-xl font-medium text-gray-700 italic">
               Smarter Decisions. Stronger Products. Faster Growth.
