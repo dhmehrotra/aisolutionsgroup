@@ -10,6 +10,7 @@ import {
   SearchIcon,
   CodeIcon,
   BookOpenIcon,
+  BotIcon,
 } from "lucide-react"
 import ContactForm from "@/components/contact-form"
 import ExperienceSection from "@/components/experience-section"
@@ -104,7 +105,7 @@ export default function Home() {
           </div>
 
           {/* Second row - 3 cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <Card className="bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-200">
               <CardContent className="p-8 flex flex-col items-center text-center space-y-4">
                 <div className="p-3 bg-[#3B6F9C]/10 rounded-full">
@@ -125,6 +126,19 @@ export default function Home() {
                 <h3 className="text-xl font-bold text-[#1A1A1A]">Custom GPTs & Internal Enablement</h3>
                 <p className="text-gray-600">
                   Deploy ChatGPT as a real tool, not just a toy. Train superusers and streamline workflows.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-200">
+              <CardContent className="p-8 flex flex-col items-center text-center space-y-4">
+                <div className="p-3 bg-[#3B6F9C]/10 rounded-full">
+                  <BotIcon className="h-8 w-8 text-[#3B6F9C]" />
+                </div>
+                <h3 className="text-xl font-bold text-[#1A1A1A]">Custom AI Agents</h3>
+                <p className="text-gray-600">
+                  Build autonomous agents to handle customers, knowledge, and workflows — scalable with your business
+                  needs.
                 </p>
               </CardContent>
             </Card>
