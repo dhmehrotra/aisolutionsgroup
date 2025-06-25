@@ -125,7 +125,8 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold text-[#1A1A1A]">Custom GPTs & Internal Enablement</h3>
                 <p className="text-gray-600">
-                  Deploy ChatGPT as a real tool, not just a toy. Train superusers and streamline workflows.
+                  Deploy GPTs with robust prompt architecture, RAG pipelines, and evaluation frameworks. Train
+                  superusers and streamline workflows.
                 </p>
               </CardContent>
             </Card>

@@ -62,7 +62,7 @@ export default function ExperienceSection() {
             {stage.companies.map((company) => (
               <div
                 key={company.name}
-                className="flex flex-col items-center space-y-2 p-6 bg-white border border-gray-100 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200"
+                className="flex flex-col items-center p-6 bg-white border border-gray-100 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200"
               >
                 <div className="h-28 w-full flex items-center justify-center">
                   <img
@@ -73,7 +73,6 @@ export default function ExperienceSection() {
                     }`}
                   />
                 </div>
-                <span className="text-sm text-gray-500 font-medium">{stage.title}</span>
               </div>
             ))}
           </div>
