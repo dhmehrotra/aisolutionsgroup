@@ -13,7 +13,7 @@ import {
   BotIcon,
 } from "lucide-react"
 import ContactForm from "@/components/contact-form"
-import ExperienceSection from "@/components/experience-section"
+import CollectiveExperience from "@/components/collective-experience"
 
 export default function Home() {
   return (
@@ -39,7 +39,7 @@ export default function Home() {
               </Button>
               <Button
                 variant="outline"
-                className="border-gray-300 hover:bg-gray-50 px-8 py-6 h-auto text-base"
+                className="border-gray-300 hover:bg-gray-50 px-8 py-6 h-auto text-base bg-transparent"
                 size="lg"
                 asChild
               >
@@ -300,15 +300,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Experience Across Stages Section */}
-      <section className="w-full py-24 md:py-32 bg-white">
+      {/* Our Collective Experience Section */}
+      <section className="w-full py-24 md:py-32 bg-[#F8F9FA]">
         <div className="container px-4 md:px-6 max-w-6xl mx-auto">
           <div className="flex flex-col items-center space-y-4 text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-[#1A1A1A]">
-              Execution Experience Across Every Stage
+              Our Collective Experience
             </h2>
+            <p className="text-gray-600 md:text-xl/relaxed max-w-[800px]">
+              B2B and B2C leadership across early innovation, global scale, and turnaround initiatives.
+            </p>
           </div>
-          <ExperienceSection />
+          <CollectiveExperience />
         </div>
       </section>
 
@@ -328,7 +331,7 @@ export default function Home() {
             <div className="mt-8 text-center">
               <Button
                 variant="outline"
-                className="border-gray-300 hover:bg-gray-50 gap-2 px-8 py-6 h-auto text-base"
+                className="border-gray-300 hover:bg-gray-50 gap-2 px-8 py-6 h-auto text-base bg-transparent"
                 asChild
               >
                 <a href="https://zcal.co/mehrotra" target="_blank" rel="noopener noreferrer">
