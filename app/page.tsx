@@ -296,6 +296,65 @@ export default function Home() {
                 Learn more <ArrowRightIcon className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
+            <div className="flex flex-col space-y-4 bg-white p-8 border border-gray-100 rounded-lg shadow-sm">
+              <h3 className="text-xl font-bold text-[#1A1A1A]">Enterprise AI Enablement Program</h3>
+              <p className="text-gray-600">
+                Designed and delivered AI adoption sprints for a Fortune‑1000 team, training 50+ employees and
+                integrating secure GenAI workflows.
+              </p>
+              <a href="#" className="text-[#3B6F9C] font-medium flex items-center gap-1 group w-fit">
+                Learn more <ArrowRightIcon className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              </a>
+            </div>
+
+            <div className="flex flex-col space-y-4 bg-white p-8 border border-gray-100 rounded-lg shadow-sm">
+              <h3 className="text-xl font-bold text-[#1A1A1A]">Realtor Assistant (Studio Project)</h3>
+              <p className="text-gray-600">
+                Incubated and prototyped a realtor assistant through our studio arm, later informing SMB implementations
+                in beta customers.
+              </p>
+              <a href="#" className="text-[#3B6F9C] font-medium flex items-center gap-1 group w-fit">
+                Learn more <ArrowRightIcon className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              </a>
+            </div>
+
+            <div className="flex flex-col space-y-4 bg-white p-8 border border-gray-100 rounded-lg shadow-sm">
+              <h3 className="text-xl font-bold text-[#1A1A1A]">AI Knowledge Systems & Governance</h3>
+              <p className="text-gray-600">
+                Partnered with a global services firm to deploy GPT-powered internal tools with robust data governance
+                and compliance guardrails.
+              </p>
+              <a href="#" className="text-[#3B6F9C] font-medium flex items-center gap-1 group w-fit">
+                Learn more <ArrowRightIcon className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              </a>
+            </div>
+
+            <div className="flex flex-col space-y-4 bg-white p-8 border border-gray-100 rounded-lg shadow-sm">
+              <h3 className="text-xl font-bold text-[#1A1A1A]">Custom GPTs for Enterprise Workflow Acceleration</h3>
+              <p className="text-gray-600">
+                Designed and deployed secure, domain‑specific GPT copilots for a global enterprise's marketing and
+                operations teams. Integrated internal data (via RAG pipelines) to answer process questions,
+                auto‑generate campaign briefs, and streamline reporting—while training "superusers" to champion
+                adoption.
+              </p>
+              <a href="#" className="text-[#3B6F9C] font-medium flex items-center gap-1 group w-fit">
+                Learn more <ArrowRightIcon className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              </a>
+            </div>
+
+            <div className="flex flex-col space-y-4 bg-white p-8 border border-gray-100 rounded-lg shadow-sm">
+              <h3 className="text-xl font-bold text-[#1A1A1A]">
+                AI Readiness & Use‑Case Discovery for a Fortune‑1000 Organization
+              </h3>
+              <p className="text-gray-600">
+                Led a 4‑week AI Discovery Sprint to identify high‑impact use cases in supplier analytics and customer
+                support. Delivered a clear prioritization matrix, technical feasibility assessment, and an
+                executive‑ready roadmap to kick‑start their AI adoption journey.
+              </p>
+              <a href="#" className="text-[#3B6F9C] font-medium flex items-center gap-1 group w-fit">
+                Learn more <ArrowRightIcon className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              </a>
+            </div>
           </div>
         </div>
       </section>
